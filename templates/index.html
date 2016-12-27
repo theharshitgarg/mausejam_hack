@@ -7,7 +7,27 @@
     <body>
         <h1>Hello</h1>
         <div class="container">
-            
+            <div class="row">
+                <form>
+                    <div class="col-md-6">
+                        <div class="form-control">
+                            <select id="source">
+                               {% for i in [1,2,3,4] %}
+                                <option value="{{ i}}">{{ i }}</option>
+                                {% endfor %}
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-control">
+                            
+                        </div>
+                    </div>    
+                </form>                
+            </div>
+            <div class="row" id="display_area">
+                <h3>The shortest paths are </h3>                
+            </div>
         </div>
     </body>
 </html>
